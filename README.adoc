@@ -1,0 +1,11 @@
+= Use any maven variable in an annotation
+
+Steps
+
+1. configure templating-maven-plugin (see pom.xml)
+2. add constants in src/main/java/java-templates (see org.tomitribe.Version)
+3. use it (see org.tomitribe.UsingIt)
+
+While constants are resolved at compilation time you can use them in annotation
+and since the filtering (maven-java link) is done before sources are compiled with templating-maven-plugin
+all works smoothly.
